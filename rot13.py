@@ -27,7 +27,7 @@ def encrypt():
     global str_in,str_out,str_len
     for i in range(str_len):
         a=str_in[i]
-        if a=='\n' or a==' ' or a=='.' or a==',' or a=='\t' or a=="\"" or a=="\'" or a==':' or a==';' or a=='!' or a=='&' or a=='%' or a=='$' or a=='@' or a=='#':
+        if a=='?' or a=='<' or a=='>' or a=='\n' or a==' ' or a=='.' or a==',' or a=='\t' or a=="\"" or a=="\'" or a==':' or a==';' or a=='!' or a=='&' or a=='%' or a=='$' or a=='@' or a=='#':
             str_out+=a
             continue
         loc=char.find(a.upper())
